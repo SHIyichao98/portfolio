@@ -1,0 +1,93 @@
+# Academic Portfolio
+
+This is a static academic portfolio and research archive. It is intentionally
+text-first: closer to a personal faculty / researcher homepage than a commercial
+portfolio landing page.
+
+## Files
+
+- `index.html`: page content, research interests, projects, writing, CV, contact.
+- `styles.css`: typography, layout, spacing, and responsive behavior.
+- `script.js`: updates the footer year.
+- `assets/hero-portfolio.png`: retained as a small grayscale figure.
+
+## Local Preview
+
+Run a local server from this directory:
+
+```powershell
+python -m http.server 5500
+```
+
+Then open:
+
+```text
+http://127.0.0.1:5500/
+```
+
+Keep the PowerShell window open while previewing. Closing it stops the preview
+server.
+
+## What To Replace
+
+1. Replace `Shiyi` with your preferred academic name.
+2. Replace `your.email@example.com`, GitHub, and LinkedIn links.
+3. Update the affiliation line under the name.
+4. Replace the three research questions with your real interests.
+5. Replace project descriptions with your actual research, design, or coding work.
+6. Add real publications, working papers, studio projects, or course notes.
+7. Update the CV section with your education, lab, advisor, tools, and service.
+
+## Publishing With GitHub Pages
+
+This site has no build step. It can be published for free with GitHub Pages as a
+public repository. The current structure is ready for Pages:
+
+- `index.html` is at the repository root.
+- `styles.css`, `script.js`, and `assets/` use relative paths.
+- `.nojekyll` is included so GitHub serves the files as plain static files.
+
+### Option A: Project Site
+
+This is like `https://karadagi.github.io/researcher_profile/`.
+
+1. Create a public GitHub repository, for example `portfolio`.
+2. Push this folder to that repository.
+3. Open the repository on GitHub.
+4. Go to `Settings` -> `Pages`.
+5. Under `Build and deployment`, choose `Deploy from a branch`.
+6. Select branch `main` and folder `/root`.
+7. Save.
+
+Your URL will usually be:
+
+```text
+https://YOUR-GITHUB-USERNAME.github.io/portfolio/
+```
+
+### Option B: Personal Homepage
+
+Use this if you want the shorter URL:
+
+```text
+https://YOUR-GITHUB-USERNAME.github.io/
+```
+
+Create the repository with this exact name:
+
+```text
+YOUR-GITHUB-USERNAME.github.io
+```
+
+Then push these files to that repository and enable Pages from `main` + `/root`.
+
+For Netlify or Vercel, import the GitHub repository and leave the build command
+empty. The publish directory is `.`.
+
+## Maintenance
+
+- Keep the newest or most relevant work near the top.
+- Use project entries like citations: year, title, short description, links.
+- Add dates to notes and publications so the archive has a clear timeline.
+- Check external links every few months.
+- Keep images lightweight; this version uses one optional grayscale figure.
