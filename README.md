@@ -38,6 +38,56 @@ server.
 6. Add real publications, working papers, studio projects, or course notes.
 7. Update the CV section with your education, lab, advisor, tools, and service.
 
+## Project Pages With Markdown
+
+Project detail pages are managed with Markdown files in:
+
+```text
+content/projects/
+```
+
+The image wall in `index.html` uses `data-project` values to decide which
+Markdown file to open. For example:
+
+```html
+<a href="#project/arch-6020" data-project="arch-6020">
+```
+
+loads:
+
+```text
+content/projects/arch-6020.md
+```
+
+Each Markdown file can include front matter:
+
+```markdown
+---
+title: Project Title
+year: 2026
+type: Teaching / research
+cover: assets/path/to/cover.jpg
+summary: One sentence summary.
+---
+```
+
+Supported Markdown patterns:
+
+- `## Heading`
+- `### Subheading`
+- Paragraphs
+- Bullet lists
+- `![Caption](assets/path/to/image.jpg)`
+- `[Link text](https://example.com)`
+- `**bold text**`
+
+To add a new project:
+
+1. Put images in `assets/`.
+2. Create a new Markdown file in `content/projects/`.
+3. Add the new slug to `projectSources` in `script.js`.
+4. Add a tile in `index.html` with `data-project="your-slug"`.
+
 ## Publishing With GitHub Pages
 
 This site has no build step. It can be published for free with GitHub Pages as a
