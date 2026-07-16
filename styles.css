@@ -5,9 +5,9 @@
   --line: rgba(255, 255, 255, 0.12);
   --panel: #101111;
   --accent: #d8b454;
-  --sidebar: 320px;
-  --gap: 22px;
-  --tile-ratio: 1.22 / 1;
+  --sidebar: 360px;
+  --gap: 16px;
+  --tile-ratio: 1 / 1;
   --detail-image-height: min(68vh, 620px);
 }
 
@@ -25,9 +25,9 @@ body {
     radial-gradient(circle at 72% 16%, rgba(255, 255, 255, 0.08), transparent 28%),
     linear-gradient(135deg, #070808, #101110 44%, #050505);
   color: var(--ink);
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.38;
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.32;
 }
 
 a {
@@ -45,7 +45,7 @@ img {
   inset: 0 auto 0 0;
   width: var(--sidebar);
   overflow: hidden;
-  padding: 34px 40px 28px;
+  padding: 34px 34px 28px;
   background:
     radial-gradient(circle at 18% 4%, rgba(255, 255, 255, 0.08), transparent 24%),
     linear-gradient(180deg, #0e0f0f, #080909);
@@ -54,30 +54,30 @@ img {
 }
 
 .profile h1 {
-  margin: 0 0 28px;
+  margin: 0 0 24px;
   color: #ffffff;
-  font-size: clamp(2.4rem, 4vw, 3.4rem);
-  font-weight: 400;
-  line-height: 0.95;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .profile p {
   margin: 0;
   max-width: 230px;
   color: var(--muted);
-  font-size: 0.96rem;
-  line-height: 1.55;
+  font-size: 0.82rem;
+  line-height: 1.42;
 }
 
 .index-nav {
-  margin-top: 34px;
-  padding-top: 30px;
+  margin-top: 28px;
+  padding-top: 26px;
   border-top: 1px solid var(--line);
 }
 
 .index-nav section + section {
-  margin-top: 24px;
-  padding-top: 24px;
+  margin-top: 22px;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
 }
 
@@ -86,7 +86,7 @@ img {
 .kicker {
   margin: 0 0 5px;
   color: #f6f1e7;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -94,10 +94,10 @@ img {
 .index-nav a,
 .side-links a {
   display: block;
-  padding: 4px 0;
+  padding: 3px 0;
   color: var(--muted);
-  font-size: 0.94rem;
-  line-height: 1.35;
+  font-size: 0.95rem;
+  line-height: 1.28;
 }
 
 .index-nav a:hover,
@@ -106,21 +106,21 @@ img {
 }
 
 .side-links {
-  margin-top: 30px;
-  padding-top: 24px;
+  margin-top: 26px;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
 }
 
 .side-links a {
   padding-left: 0;
-  font-weight: 500;
-  font-size: 0.92rem;
+  font-weight: 700;
+  font-size: 0.95rem;
 }
 
 .gallery {
   margin-left: var(--sidebar);
   min-height: 100vh;
-  padding: 34px 46px 34px 38px;
+  padding: 32px 38px 32px 32px;
   display: grid;
   grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: var(--gap);
@@ -138,7 +138,7 @@ body.viewing-project .gallery {
   overflow: hidden;
   background: #171817;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border-radius: 0;
   outline: 0 solid transparent;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
 }
@@ -344,7 +344,7 @@ body.viewing-project .gallery {
 
 @media (max-width: 1080px) {
   :root {
-    --sidebar: 300px;
+    --sidebar: 330px;
   }
 
   .gallery {
@@ -382,8 +382,7 @@ body.viewing-project .gallery {
     grid-template-columns: 1fr;
   }
 
-  .tile,
-  .text-panel {
-    aspect-ratio: 4 / 3;
+  .tile {
+    aspect-ratio: 1 / 1;
   }
 }
