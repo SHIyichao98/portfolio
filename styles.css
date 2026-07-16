@@ -127,7 +127,7 @@ body.viewing-project .gallery {
   min-height: 0;
   object-fit: cover;
   transform: scale(1.08);
-  transition: transform 320ms ease, filter 320ms ease;
+  transition: transform 320ms ease, filter 320ms ease, opacity 220ms ease;
 }
 
 .tile:nth-child(2) img,
@@ -142,40 +142,14 @@ body.viewing-project .gallery {
   object-position: 20% 56%;
 }
 
-.tile::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0) 45%);
-  opacity: 0;
-  transition: opacity 220ms ease;
-}
-
-.tile span {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 16px;
-  z-index: 1;
-  color: white;
-  font-size: 0.94rem;
-  font-weight: 700;
-  opacity: 0;
-  transform: translateY(7px);
-  transition: opacity 220ms ease, transform 220ms ease;
-}
-
 .tile:hover img {
   transform: scale(1.13);
+  opacity: 0.88;
 }
 
-.tile:hover::after,
-.tile:hover span {
-  opacity: 1;
-}
-
-.tile:hover span {
-  transform: translateY(0);
+.tile:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
 }
 
 .text-panel {

@@ -4,6 +4,9 @@ const projectSources = {
   "study-abroad": "content/projects/study-abroad.md",
   "knowledge-atlas": "content/projects/knowledge-atlas.md",
   "interface-studies": "content/projects/interface-studies.md",
+  about: "content/projects/about.md",
+  publications: "content/projects/publications.md",
+  cv: "content/projects/cv.md",
 };
 
 const detail = document.querySelector("#project-detail");
