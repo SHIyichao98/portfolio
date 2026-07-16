@@ -44,8 +44,8 @@ img {
   position: fixed;
   inset: 0 auto 0 0;
   width: var(--sidebar);
-  overflow-y: auto;
-  padding: 44px 42px;
+  overflow: hidden;
+  padding: 34px 40px 28px;
   background:
     radial-gradient(circle at 18% 4%, rgba(255, 255, 255, 0.08), transparent 24%),
     linear-gradient(180deg, #0e0f0f, #080909);
@@ -54,7 +54,7 @@ img {
 }
 
 .profile h1 {
-  margin: 0 0 34px;
+  margin: 0 0 28px;
   color: #ffffff;
   font-size: clamp(2.4rem, 4vw, 3.4rem);
   font-weight: 400;
@@ -66,18 +66,18 @@ img {
   max-width: 230px;
   color: var(--muted);
   font-size: 0.96rem;
-  line-height: 1.75;
+  line-height: 1.55;
 }
 
 .index-nav {
-  margin-top: 44px;
-  padding-top: 36px;
+  margin-top: 34px;
+  padding-top: 30px;
   border-top: 1px solid var(--line);
 }
 
 .index-nav section + section {
-  margin-top: 34px;
-  padding-top: 30px;
+  margin-top: 24px;
+  padding-top: 24px;
   border-top: 1px solid var(--line);
 }
 
@@ -94,9 +94,9 @@ img {
 .index-nav a,
 .side-links a {
   display: block;
-  padding: 6px 0 6px 0;
+  padding: 4px 0;
   color: var(--muted);
-  font-size: 0.98rem;
+  font-size: 0.94rem;
   line-height: 1.35;
 }
 
@@ -106,14 +106,15 @@ img {
 }
 
 .side-links {
-  margin-top: 44px;
-  padding-top: 32px;
+  margin-top: 30px;
+  padding-top: 24px;
   border-top: 1px solid var(--line);
 }
 
 .side-links a {
   padding-left: 0;
   font-weight: 500;
+  font-size: 0.92rem;
 }
 
 .gallery {
@@ -356,6 +357,7 @@ body.viewing-project .gallery {
     position: static;
     width: auto;
     max-height: none;
+    overflow: visible;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
