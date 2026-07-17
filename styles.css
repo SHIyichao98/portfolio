@@ -255,16 +255,13 @@ body.viewing-project .gallery {
 }
 
 .markdown-body {
-  max-width: 980px;
+  max-width: 1120px;
 }
 
 .project-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 0.8fr) minmax(280px, 1fr);
-  gap: 32px;
-  align-items: end;
-  margin-bottom: 44px;
-  padding-bottom: 34px;
+  max-width: 880px;
+  margin-bottom: 30px;
+  padding-bottom: 28px;
   border-bottom: 1px solid #d7d4cc;
 }
 
@@ -282,10 +279,94 @@ body.viewing-project .gallery {
   color: #5d5a55;
 }
 
-.project-hero img {
-  aspect-ratio: 4 / 3;
-  height: auto;
+.project-carousel {
+  width: min(100%, 1120px);
+  margin: 0 0 46px;
+}
+
+.carousel-frame {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #ededeb;
+  border: 1px solid #d7d4cc;
+}
+
+.carousel-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 42px;
+  height: 56px;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: rgba(15, 15, 14, 0.52);
+  color: white;
+  font: inherit;
+  font-size: 2.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+  background: rgba(15, 15, 14, 0.76);
+  outline: 0;
+}
+
+.carousel-button.previous {
+  left: 0;
+}
+
+.carousel-button.next {
+  right: 0;
+}
+
+.carousel-meta {
+  margin-top: 8px;
+  color: #77736b;
+  font-size: 0.82rem;
+}
+
+.carousel-thumbs {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 8px;
+}
+
+.carousel-thumb {
+  aspect-ratio: 1 / 1;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+  background: #e5e2dc;
+  cursor: pointer;
+  opacity: 0.62;
+}
+
+.carousel-thumb img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.carousel-thumb.active,
+.carousel-thumb:hover,
+.carousel-thumb:focus-visible {
+  border-color: #151515;
+  opacity: 1;
+  outline: 0;
 }
 
 .markdown-body h2 {
@@ -378,8 +459,14 @@ body.viewing-project .gallery {
     padding: 16px 18px;
   }
 
-  .project-hero {
-    grid-template-columns: 1fr;
+  .carousel-frame {
+    aspect-ratio: 4 / 3;
+  }
+
+  .carousel-button {
+    width: 34px;
+    height: 48px;
+    font-size: 1.7rem;
   }
 
   .tile {

@@ -8,8 +8,9 @@ portfolio landing page.
 
 - `index.html`: page content, research interests, projects, writing, CV, contact.
 - `styles.css`: typography, layout, spacing, and responsive behavior.
-- `script.js`: updates the footer year.
-- `assets/hero-portfolio.png`: retained as a small grayscale figure.
+- `script.js`: loads Markdown project pages and controls image galleries.
+- `assets/site_images/`: compressed web images used by the public site.
+- `assets/research_projects/`: local source archive, ignored by Git.
 
 ## Local Preview
 
@@ -67,6 +68,7 @@ title: Project Title
 year: 2026
 type: Teaching / research
 cover: assets/path/to/cover.jpg
+gallery: assets/path/01.jpg | assets/path/02.jpg | assets/path/03.jpg
 summary: One sentence summary.
 ---
 ```
@@ -83,10 +85,16 @@ Supported Markdown patterns:
 
 To add a new project:
 
-1. Put images in `assets/`.
-2. Create a new Markdown file in `content/projects/`.
-3. Add the new slug to `projectSources` in `script.js`.
-4. Add a tile in `index.html` with `data-project="your-slug"`.
+1. Put source material in `assets/research_projects/` if it should stay local.
+2. Export or copy lightweight web images into `assets/site_images/`.
+3. Create a new Markdown file in `content/projects/`.
+4. Add the new slug to `projectSources` in `script.js`.
+5. Add a tile in `index.html` with `data-project="your-slug"`.
+6. Add the carousel images to the Markdown frontmatter with `gallery:`.
+
+Keep the public image set small. GitHub Pages is happiest when project images
+are compressed JPG/PNG files, not full paper folders, PSD files, Illustrator
+files, or animation frame exports.
 
 ## Publishing With GitHub Pages
 
