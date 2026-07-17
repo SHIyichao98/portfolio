@@ -45,7 +45,7 @@ img {
   inset: 0 auto 0 0;
   width: var(--sidebar);
   overflow: hidden;
-  padding: 34px 34px 28px;
+  padding: 28px 30px 24px;
   background:
     radial-gradient(circle at 18% 4%, rgba(255, 255, 255, 0.08), transparent 24%),
     linear-gradient(180deg, #0e0f0f, #080909);
@@ -54,30 +54,30 @@ img {
 }
 
 .profile h1 {
-  margin: 0 0 24px;
+  margin: 0 0 18px;
   color: #ffffff;
-  font-size: 1.08rem;
+  font-size: 0.98rem;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.14;
 }
 
 .profile p {
   margin: 0;
-  max-width: 230px;
+  max-width: 250px;
   color: var(--muted);
-  font-size: 0.82rem;
-  line-height: 1.42;
+  font-size: 0.76rem;
+  line-height: 1.28;
 }
 
 .index-nav {
-  margin-top: 28px;
-  padding-top: 26px;
+  margin-top: 22px;
+  padding-top: 20px;
   border-top: 1px solid var(--line);
 }
 
 .index-nav section + section {
-  margin-top: 22px;
-  padding-top: 22px;
+  margin-top: 18px;
+  padding-top: 18px;
   border-top: 1px solid var(--line);
 }
 
@@ -86,7 +86,7 @@ img {
 .kicker {
   margin: 0 0 5px;
   color: #f6f1e7;
-  font-size: 0.95rem;
+  font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -94,10 +94,10 @@ img {
 .index-nav a,
 .side-links a {
   display: block;
-  padding: 3px 0;
+  padding: 2px 0;
   color: var(--muted);
-  font-size: 0.95rem;
-  line-height: 1.28;
+  font-size: 0.82rem;
+  line-height: 1.18;
 }
 
 .index-nav a:hover,
@@ -106,15 +106,15 @@ img {
 }
 
 .side-links {
-  margin-top: 26px;
-  padding-top: 22px;
+  margin-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid var(--line);
 }
 
 .side-links a {
   padding-left: 0;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.82rem;
 }
 
 .gallery {
