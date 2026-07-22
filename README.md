@@ -148,4 +148,23 @@ empty. The publish directory is `.`.
 - Use project entries like citations: year, title, short description, links.
 - Add dates to notes and publications so the archive has a clear timeline.
 - Check external links every few months.
-- Keep images lightweight; this version uses one optional grayscale figure.
+- Keep raw research folders local and ignored by Git. Only publish selected web
+  images from `assets/site_images/`.
+- After replacing site images, run:
+
+```powershell
+python tools\enhance_site_images.py
+```
+
+This does a conservative web cleanup pass: resize very small images, normalize
+contrast on diagram-like figures, and lightly sharpen photos/renders.
+
+For paper screenshots that still look blurry, re-render the original PDF at a
+higher resolution and choose a cleaner crop:
+
+```powershell
+python tools\render_pdf_pages.py "assets\research_projects\PROJECT\paper.pdf" ".codex-preview\pdf-pages" --dpi 360
+```
+
+Then crop the best page/figure into `assets/site_images/`, update the matching
+Markdown gallery if needed, and run `python tools\enhance_site_images.py` again.

@@ -2,3 +2,5 @@ assets/research_projects/
 assets/teaching_work_samples/**/hero_image/
 .codex-preview/
 .codex-server*.log
+__pycache__/
+*.pyc
