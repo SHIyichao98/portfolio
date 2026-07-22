@@ -2,8 +2,8 @@
 title: Rule-Level Reasoning for Performance-Aware Floorplan Generation
 year: SimAUD 2026
 type: Research / simulation and explainable AI
-cover: assets/site_images/research/simaud-2026/01.jpg
-gallery: assets/site_images/research/simaud-2026/01.jpg | assets/site_images/research/simaud-2026/02.jpg | assets/site_images/research/simaud-2026/03.jpg | assets/site_images/research/simaud-2026/04.jpg | assets/site_images/research/simaud-2026/05.jpg | assets/site_images/research/simaud-2026/06.jpg
+cover: assets/site_images/research/simaud-2026/hero.jpg
+gallery: assets/site_images/research/simaud-2026/hero.jpg | assets/site_images/research/simaud-2026/01.jpg | assets/site_images/research/simaud-2026/02.jpg | assets/site_images/research/simaud-2026/03.jpg | assets/site_images/research/simaud-2026/04.jpg | assets/site_images/research/simaud-2026/05.jpg | assets/site_images/research/simaud-2026/06.jpg | assets/site_images/research/simaud-2026/07.jpg
 summary: A neural-symbolic workflow linking shape grammar floor-plan generation, daylight simulation, and rule-level performance interpretation.
 ---
 

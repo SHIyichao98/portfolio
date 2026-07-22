@@ -2,8 +2,8 @@
 title: Benchmarking pix2pix on Floor Plans
 year: CAADRIA 2026
 type: Research / benchmarking and floor-plan generation
-cover: assets/site_images/research/caadria-2026/01.jpg
-gallery: assets/site_images/research/caadria-2026/01.jpg | assets/site_images/research/caadria-2026/02.jpg | assets/site_images/research/caadria-2026/03.jpg | assets/site_images/research/caadria-2026/04.jpg | assets/site_images/research/caadria-2026/05.jpg | assets/site_images/research/caadria-2026/06.jpg
+cover: assets/site_images/research/caadria-2026/hero.jpg
+gallery: assets/site_images/research/caadria-2026/hero.jpg | assets/site_images/research/caadria-2026/01.jpg | assets/site_images/research/caadria-2026/02.jpg | assets/site_images/research/caadria-2026/03.jpg | assets/site_images/research/caadria-2026/04.jpg | assets/site_images/research/caadria-2026/05.jpg
 summary: A deterministic shape-grammar benchmark for evaluating the practical limits of pix2pix floor-plan generation.
 ---
 

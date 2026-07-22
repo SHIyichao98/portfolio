@@ -2,8 +2,8 @@
 title: From Concept to Consistent Multi-View Renders
 year: CAADRIA 2025
 type: Research / shape grammar and generative AI
-cover: assets/site_images/research/caadria-2025-1/01.jpg
-gallery: assets/site_images/research/caadria-2025-1/01.jpg | assets/site_images/research/caadria-2025-1/02.jpg | assets/site_images/research/caadria-2025-1/03.jpg | assets/site_images/research/caadria-2025-1/04.jpg | assets/site_images/research/caadria-2025-1/05.jpg | assets/site_images/research/caadria-2025-1/06.jpg
+cover: assets/site_images/research/caadria-2025-1/hero.jpg
+gallery: assets/site_images/research/caadria-2025-1/hero.jpg | assets/site_images/research/caadria-2025-1/01.jpg | assets/site_images/research/caadria-2025-1/02.jpg | assets/site_images/research/caadria-2025-1/03.jpg | assets/site_images/research/caadria-2025-1/04.jpg
 summary: A workflow that connects shape grammar reasoning with Stable Diffusion to improve consistency across AI-generated architectural views.
 ---
 

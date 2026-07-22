@@ -2,8 +2,8 @@
 title: Reimagining Chinese Garden Design
 year: CAADRIA 2025
 type: Research / interactive generative design
-cover: assets/site_images/research/caadria-2025-2/01.jpg
-gallery: assets/site_images/research/caadria-2025-2/01.jpg | assets/site_images/research/caadria-2025-2/02.jpg | assets/site_images/research/caadria-2025-2/03.jpg | assets/site_images/research/caadria-2025-2/04.jpg | assets/site_images/research/caadria-2025-2/05.jpg | assets/site_images/research/caadria-2025-2/06.jpg
+cover: assets/site_images/research/caadria-2025-2/hero.jpg
+gallery: assets/site_images/research/caadria-2025-2/hero.jpg | assets/site_images/research/caadria-2025-2/01.jpg | assets/site_images/research/caadria-2025-2/02.jpg | assets/site_images/research/caadria-2025-2/03.jpg | assets/site_images/research/caadria-2025-2/04.jpg | assets/site_images/research/caadria-2025-2/05.jpg
 summary: An interactive design methodology for Chinese garden masterplans using dynamic inputs, design knowledge, and image-generation techniques.
 ---
 
